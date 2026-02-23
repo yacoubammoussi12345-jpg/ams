@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Klick Spiel</title>
+<style>
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+    h1 {
+        color: #333;
+    }
+    #gameButton {
+        padding: 20px 40px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    #score, #time {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<h1>🎯 Klick so schnell du kannst!</h1>
+<p id="time">Zeit: 30</p>
+<p id="score">Punkte: 0</p>
+<button id="gameButton">KLICK MICH!</button>
+
+<script>
+let score = 0;
+let timeLeft = 30;
+let gameActive = true;
+
+const scoreDisplay = document.getElementById("score");
+const timeDisplay = document.getElementById("time");
+const button = document.getElementById("gameButton");
+
+button.addEventListener("click", function() {
+    if (gameActive) {
+        score++;
+        scoreDisplay.textContent = "Punkte: " + score;
+    }
+});
+
+const timer = setInterval(function() {
+    timeLeft--;
+    timeDisplay.textContent = "Zeit: " + timeLeft;
+
+    if (timeLeft <= 0) {
+        clearInterval(timer);
+        gameActive = false;
+        button.disabled = true;
+        alert("Spiel vorbei! Deine Punkte: " + score);
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
