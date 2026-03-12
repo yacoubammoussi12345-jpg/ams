@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom Shoe Shop</title>
+<title>Los Colognes Custom</title>
 
 <style>
 
@@ -104,8 +104,8 @@ margin-top:20px;
 <body>
 
 <header>
-<h1>👟 Custom Shoe Shop</h1>
-<p>Konfiguriere deinen eigenen Schuh</p>
+<h1>Los Colognes Custom</h1>
+<p>Konfiguriere deine Zukunft</p>
 </header>
 
 <div class="container">
