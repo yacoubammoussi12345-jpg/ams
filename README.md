@@ -149,6 +149,10 @@ margin-top:20px;
 
 <label>Größe</label>
 <select id="size">
+<option>36</option>
+<option>36,5</option>
+<option>37</option>
+<option>37,5</option>
 <option>38</option>
 <option>39</option>
 <option>40</option>
@@ -156,6 +160,8 @@ margin-top:20px;
 <option>42</option>
 <option>43</option>
 <option>44</option>
+<option>45</option>
+<option>46</option>
 </select>
 
 <button onclick="addToCart()">Zum Warenkorb hinzufügen</button>
